@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <header class="profile-header">
+            <figure class="profile-figure">
+                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=facearea&w=400&h=400&q=80"
+                    alt="Portrait of Oladipo Samcharles" class="profile-avatar" data-testid="test-user-avatar" />
+                <figcaption class="sr-only">Oladipo Samcharles portrait
+                </figcaption>
+            </figure>
+            <div class="profile-meta">
+                <h2 data-testid="test-user-name">Oladipo Samcharles</h2>
+                <p class="title">Frontend Developer</p>
+                <p class="current-time">Current time (ms): <span data-testid="test-user-time" aria-live="polite"></span>
+                </p>
+            </div>
+        </header>
+
+        <p class="profile-bio" data-testid="test-user-bio">
+            I am a frontend engineer focused on crafting fast, inclusive interfaces that elevate
+            complex products. I blend design intuition with modern web tooling to deliver resilient user journeys and
+            a polished visual story across every viewport.
+        </p>
+
+        <section class="profile-section">
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+                <li>Urban sketching</li>
+                <li>Third-wave coffee tasting</li>
+                <li>Trail running</li>
+            </ul>
+        </section>
+
+        <section class="profile-section">
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+                <li>Dark mode without testing contrast</li>
+                <li>Unclear meeting agendas</li>
+                <li>Overcomplicated onboarding flows</li>
+            </ul>
+        </section>
+
+        <nav class="profile-social" aria-label="Social links">
+            <ul data-testid="test-user-social-links">
+                <li>
+                    <a href="https://github.com/oladiposamcharles" target="_blank" rel="noopener noreferrer"
+                        data-testid="test-user-social-github">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://x.com/carles_devlog" target="_blank" rel="noopener noreferrer"
+                        data-testid="test-user-social-twitter">Twitter</a>
+                </li>
+            </ul>
+        </nav>
+    </article>
+
+    <script>
+        const updateTime = () => {
+            const timeSpan = document.querySelector('[data-testid="test-user-time"]');
+            if (!timeSpan) {
+                return;
+            }
+            timeSpan.textContent = Date.now().toString();
+        };
+
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+
+</html>

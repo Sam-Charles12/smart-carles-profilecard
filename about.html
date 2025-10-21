@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Oladipo Samcharles</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <main class="profile-card" data-testid="test-about-page" role="main">
+        <header class="profile-header">
+            <figure class="profile-figure">
+                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=facearea&w=400&h=400&q=80"
+                    alt="Portrait of Oladipo Samcharles" class="profile-avatar" />
+                <figcaption class="sr-only">Oladipo Samcharles portrait</figcaption>
+            </figure>
+            <div class="profile-meta">
+                <h1>About Me</h1>
+                <p class="title">Oladipo Samcharles</p>
+                <p class="current-time">Frontend Developer</p>
+            </div>
+        </header>
+
+        <section class="profile-section" aria-labelledby="bio-heading">
+            <h2 id="bio-heading">Bio</h2>
+            <p class="profile-bio" data-testid="test-about-bio">
+                I am an aspiring frontend developer who is passionate about creating beautiful and functional web experiences. My journey in tech started with a fascination for how websites work and a desire to build things that people can use and enjoy. I'm currently learning HTML, CSS, and JavaScript, and I love the process of turning ideas into reality through code. I'm excited to grow my skills and contribute to meaningful projects that make a difference.
+            </p>
+        </section>
+
+        <section class="profile-section" aria-labelledby="goals-heading">
+            <h2 id="goals-heading">Goals in HNG Internship</h2>
+            <div data-testid="test-about-goals">
+                <p class="profile-bio">
+                    My primary goals for this HNG internship program are focused on learning, growth, and building a solid foundation in frontend development:
+                </p>
+                <ul>
+                    <li>Learn React from the ground up and understand component-based development</li>
+                    <li>Master JavaScript fundamentals and ES6+ features</li>
+                    <li>Build real-world projects that I can showcase in my portfolio</li>
+                    <li>Collaborate with other developers and learn teamwork in tech</li>
+                    <li>Understand responsive design and mobile-first development</li>
+                    <li>Learn version control with Git and GitHub workflows</li>
+                    <li>Network with experienced developers and find mentors</li>
+                    <li>Gain confidence in my coding abilities through hands-on practice</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="profile-section" aria-labelledby="confidence-heading">
+            <h2 id="confidence-heading">Areas of Low Confidence</h2>
+            <div data-testid="test-about-confidence">
+                <p class="profile-bio">
+                    I believe in being honest about where I am in my learning journey. These are areas where I need to build knowledge and confidence:
+                </p>
+                <ul>
+                    <li>JavaScript advanced concepts - still learning async/await, promises, and closures</li>
+                    <li>React - haven't started yet but excited to learn component-based development</li>
+                    <li>Backend development - completely new to server-side programming and databases</li>
+                    <li>API integration - need to learn how to work with REST APIs and fetch data</li>
+                    <li>Testing - don't know how to write or run tests for my code yet</li>
+                    <li>CSS frameworks - want to learn Tailwind CSS or Bootstrap</li>
+                    <li>Deployment - not sure how to get my projects live on the internet</li>
+                    <li>Debugging complex issues - still learning how to troubleshoot effectively</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="profile-section" aria-labelledby="future-note-heading">
+            <h2 id="future-note-heading">Note to Future Self</h2>
+            <div class="future-note" data-testid="test-about-future-note">
+                <p class="profile-bio">
+                    Dear Future Me,
+                </p>
+                <p class="profile-bio">
+                    Right now, you're at the very beginning of your coding journey, and that's perfectly okay. You're starting the HNG internship with basic HTML, CSS, and some JavaScript knowledge, but more importantly, you have curiosity, determination, and a willingness to learn.
+                </p>
+                <p class="profile-bio">
+                    Don't worry about not knowing React yet or being completely new to backend development. Every expert was once a beginner. Focus on understanding the fundamentals deeply, ask lots of questions, and don't be afraid to make mistakes - that's how you learn.
+                </p>
+                <p class="profile-bio">
+                    Remember that progress isn't always linear. Some days will feel like breakthroughs, others might feel overwhelming. Both are part of the journey. Celebrate the small wins - your first working form, your first responsive layout, your first JavaScript function that works exactly as intended.
+                </p>
+                <p class="profile-bio">
+                    Be patient with yourself, help others when you can, and never stop being curious about how things work.
+                </p>
+                <p class="profile-bio">
+                    You've got this! 💪
+                </p>
+            </div>
+        </section>
+
+        <section class="profile-section" aria-labelledby="extra-heading">
+            <h2 id="extra-heading">Extra Thoughts</h2>
+            <div data-testid="test-about-extra">
+                <p class="profile-bio">
+                    Starting a career in tech can feel overwhelming, but I'm excited about the possibilities ahead. I chose frontend development because I love the visual aspect of coding - seeing your work come to life in the browser is incredibly satisfying.
+                </p>
+                <p class="profile-bio">
+                    I believe that everyone should have access to well-designed, accessible websites, and I want to be part of creating those experiences. Even though I'm just starting out, I'm committed to learning best practices and writing clean, maintainable code.
+                </p>
+                <p class="profile-bio">
+                    My current setup: VS Code, lots of MDN documentation tabs, and a growing collection of coding tutorials. I'm learning that consistency beats intensity - a little coding every day goes a long way!
+                </p>
+                <p class="profile-bio">
+                    Fun fact: My first "Hello World" was just a few months ago, and now I'm building profile cards with forms and validation! 🚀
+                </p>
+            </div>
+        </section>
+
+        <nav class="profile-social" aria-label="Navigation links" role="navigation">
+            <ul>
+                <li>
+                    <a href="index.html" aria-label="Go to home page">Home</a>
+                </li>
+                <li>
+                    <a href="contact.html" aria-label="Go to contact page">Contact</a>
+                </li>
+                <li>
+                    <a href="https://github.com/oladiposamcharles" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile (opens in new tab)">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://x.com/carles_devlog" target="_blank" rel="noopener noreferrer" aria-label="Visit Twitter profile (opens in new tab)">Twitter</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+</body>
+
+</html>

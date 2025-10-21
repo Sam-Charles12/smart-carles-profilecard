@@ -49,8 +49,14 @@
             </ul>
         </section>
 
-        <nav class="profile-social" aria-label="Social links">
+        <nav class="profile-social" aria-label="Social and navigation links">
             <ul data-testid="test-user-social-links">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
                 <li>
                     <a href="https://github.com/oladiposamcharles" target="_blank" rel="noopener noreferrer"
                         data-testid="test-user-social-github">GitHub</a>
@@ -63,18 +69,6 @@
         </nav>
     </article>
 
-    <script>
-        const updateTime = () => {
-            const timeSpan = document.querySelector('[data-testid="test-user-time"]');
-            if (!timeSpan) {
-                return;
-            }
-            timeSpan.textContent = Date.now().toString();
-        };
-
-        updateTime();
-        setInterval(updateTime, 1000);
-    </script>
 </body>
 
 </html>
